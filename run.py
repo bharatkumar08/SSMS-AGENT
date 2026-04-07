@@ -58,7 +58,7 @@ def start_flask():
     load_dotenv()
 
     host = os.getenv("FLASK_HOST", "0.0.0.0")
-    port = int(os.getenv("FLASK_PORT", "5000"))
+    port = int(os.getenv("FLASK_PORT", "8000"))
     debug = os.getenv("FLASK_DEBUG", "false").lower() == "true"
 
     logger.info("🌐 Starting Flask app on http://%s:%s", host, port)
