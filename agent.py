@@ -36,7 +36,7 @@ class MCPClient:
     def __init__(self):
         host = os.getenv("MCP_HOST", "127.0.0.1")
         port = int(os.getenv("MCP_PORT", "8001"))
-        self.base_url = f"http://{host}:{port}"
+        self.base_url = "https://mcp-sql-epf8dhbzf4c4f2ej.centralindia-01.azurewebsites.net"
         self._id = 0
 
     def _next_id(self) -> int:
