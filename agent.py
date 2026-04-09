@@ -34,8 +34,8 @@ class MCPClient:
     """Thin HTTP client that speaks JSON-RPC to the MCP server."""
 
     def __init__(self):
-        host = os.getenv("MCP_HOST", "127.0.0.1")
-        port = int(os.getenv("MCP_PORT", "8001"))
+        host = os.getenv("MCP_HOST", "mcp-sql-epf8dhbzf4c4f2ej.centralindia-01.azurewebsites.net")
+        port = int(os.getenv("MCP_PORT", "8000"))
         self.base_url = "https://mcp-sql-epf8dhbzf4c4f2ej.centralindia-01.azurewebsites.net"
         self._id = 0
 
